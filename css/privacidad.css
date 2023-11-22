@@ -1,0 +1,85 @@
+.bannerPrivacidad{
+    background-color: #d2e0f2;
+}
+.bannerPrivacidad__img{
+    width: 100%; 
+}
+
+.privacidad{
+    background-color: #d2e0f2;
+}
+
+.privacidad__h1{
+    font-size: 50px;
+    font-weight: 600;
+    margin-left: 8%;
+    margin-right: 8%;
+    padding: 25px;
+}
+
+.privacidad__h4{
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 25px;
+}
+
+.privacidad__politica{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.privacidad__p{
+    font-size: 25px;
+    text-align: justify;
+    padding: 25px;
+}
+
+.privacidad__p:last-child{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: rgb(100, 98, 98);
+}
+
+.privacidad__h2{
+    font-size: 35px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.privacidad__li{
+    font-size: 25px;
+    text-align: justify;
+    padding: 10px;
+}
+
+@media screen and (max-width:425px){
+    .privacidad__h1{
+        font-size: 25px;
+        font-weight: 100%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .privacidad__h4{
+        font-size: 12px;      
+        padding-bottom: 5px;
+    }
+
+    .privacidad__p{
+        font-size: 15px;       
+    }
+
+    .privacidad__h2{
+        font-size: 20px;    
+    }
+
+    .privacidad__li{
+        font-size: 15px;
+    }
+
+    .privacidad__p:last-child{
+        font-size: 20px;
+    }
+}

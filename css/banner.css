@@ -1,0 +1,81 @@
+.banner{
+    width: 100%; 
+    height: 420px; 
+    display: flex;
+    background-image: url("/Imagenes/banner01.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+}
+
+.banner__container{
+    width: 75%;
+    height: 250px;
+    margin-top: 150px;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+}
+
+.banner__titulo{
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 50px;
+    color: white;
+    text-shadow: #484848 6px 2px 2px;
+}
+
+.banner__parrafo{
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 22px;
+    color: white;
+    -webkit-text-stroke: 0.5px black;
+    text-shadow: #484848 3px 2px 2px;
+
+}
+
+.banner__btn{
+    background: #2A7AE4;
+    width: 129px;
+    height: 51px;
+    font: Raleway;
+    font-weight: 400;
+    font-size: 16px;
+    border: 1px solid silver;
+}
+
+.banner__btn a{
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width:425px){
+    .banner{
+    height: 260px; 
+    background-attachment: local;
+    }
+    
+    .banner__container{
+        width: 75%;
+        height: 220px;
+        margin-top: 30px;
+        margin-left: 5%;
+        margin-right: 5%;  
+    }
+    
+    .banner__titulo{
+        width: 95%;
+        font-size: 25px;
+    }
+    
+    .banner__parrafo{
+        font-size: 18px;
+    }
+
+}

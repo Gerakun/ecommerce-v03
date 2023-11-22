@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="Es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <script src="https://kit.fontawesome.com/77d76d86b5.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Eccomerce Didacti Rivers</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/editarProducto.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/rodapie.css">
+</head>
+<body>
+    <section class="menu">
+        <header class="menu__header">
+            <img class="menu__header-logo" src="../Imagenes/LogoDR.png" alt="Logo AluraGeek">
+            <p class="menu__header-p">Sección para administradores</p>    
+        </header>
+    </section>
+    <section class="editar">
+        <div class="editar__container">
+            <form class="editar__container__formulario" data-form>
+                <h3 class="editar__container__formulario-titulo">Edita tu producto</h3>
+                <div class="input-container">
+                    <label class="editar__container__formulario-label">Vuelve a seleccionar una imagen</label>
+                    <input  type="file" id="file" accept="image/*" required> 
+                    <img id="img__preview" class="img__preview" src="" alt="Imagen previa..."/>  
+                </div>
+                <div class="input-container">
+                    <label class="editar__container__formulario-label">Seleccione una categoría</label>
+                    <select required class="editar__container__formulario-select" data-categoria >
+                        <option value="Didacticos" data-tipo="categoria"
+                        data-categoria>Didacticos</option>
+                        <option value="Libros" data-tipo="categoria"
+                        data-categoria>Libros</option>
+                        <option value="Diversos" data-tipo="categoria"
+                        data-categoria>Diversos</option>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </select> 
+                  </div>
+                <div class="input-container">
+                    <label class="editar__container__formulario-label" >Nombre del producto</label>
+                    <input class="editar__container__formulario-input" type="text" required  data-producto pattern="[\s\S]{400,100}">
+                    <span class="input-message-error">Este campo no es valido</span>
+                </div>
+                <div class="input-container">
+                    <label class="editar__container__formulario-label" >Precio del produtco</label>
+                    <input class="editar__container__formulario-input" type="text" required
+                    data-precio pattern="[\s\S]{3,20}">
+                    <span class="input-message-error">Este campo no es valido</span>
+                </div>   
+                <div class="input-container">
+                    <label class="editar__container__formulario-label" >Descripción</label>
+                    <input class="editar__container__formulario-input" id="input2" type="text" required data-descripcion pattern="[\s\S]{5,1200}">
+                    <span class="input-message-error">Este campo no es valido</span>
+                </div>
+                <button class="editar__container__formulario-btn">Editar producto</button>     
+            </form>
+        </div>
+    </section>
+    <section class="rodapie">
+        <div class="rodapie__container">
+            <img src="../Imagenes/LogoDRC.png" class="rodapie__logo"/>
+            <p class="rodapie__parrafo">©Copyright Didacti Rivers</p> 
+        </div> 
+        <button class="rodapie__btn"><span><a class="rodapie__href" href="/screens/productos.html">Menú de Admin</a></span></button>  
+    </section>
+<script type="module" src="../js/app.js"></script>
+<script type="module" src="../controllers/actualizar-controller.js"></script>
+</body>
+</html>

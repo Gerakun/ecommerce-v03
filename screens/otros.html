@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="Es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <script
+      src="https://kit.fontawesome.com/77d76d86b5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Eccomerce Didacti Rivers</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/menu.css" />
+    <link rel="stylesheet" href="../css/banner.css" />
+    <link rel="stylesheet" href="../css/galeriaProductos.css" />
+    <link rel="stylesheet" href="../css/verProducto.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/rodapie.css" />
+    <script src="../js/jquery-3.6.4.min.js"></script>
+    <script src="../js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="../css/search.css" />
+    <link rel="stylesheet" href="../css/nosotros.css"/>
+  </head>
+  <body>
+    <section class="menu" id="inicio">
+      <header class="menu__header">
+          <img class="menu__header-logo" src="../Imagenes/LogoDR.png" alt="Logo Didacti Rivers">
+          <div class="menu__header-barraBusqueda">
+              <input class="menu__header-input" type="search" placeholder="¿Que deseas buscar?" id="search-input" name="search">
+              <div class="menu__header__input-btn">
+                  <i class="fa-solid fa-magnifying-glass" id="lupa"></i>
+              </div> 
+              <div class="search" id="search">
+                  <table class="search-table" id="searchTable">
+                      <thead><tr><td></td></tr></thead>
+                      <tbody>
+                          <tr>
+                              <td><a href="#inicio">Inicio</a></td>
+                          </tr>
+                          <tr>
+                              <td><a href="#didacticos">Didácticos</a></td>
+                          </tr>
+                          <tr>
+                              <td><a href="#libros">Libros</a></td>
+                          </tr>
+                          <tr>
+                              <td><a href="#diversos">Diversos</a></td>
+                          </tr>
+                          <tr>
+                              <td><a href="#">Quienes somos</a></td>
+                          </tr>
+                          <tr>
+                              <td><a href="#">Política de privacidad</a></td>
+                          </tr>
+                          <tr>
+                              <td><a href="#">Programa de fidelidad</a></td>
+                          </tr>
+                          <tr>
+                              <td><a href="#">Nuestras tiendas</a></td>
+                          </tr>
+                          <tr>
+                              <td><a href="#">Quiero ser franquiciado</a></td>
+                          </tr>
+                          <tr>
+                              <td><a href="#">Anúncie aquí</a></td>
+                          </tr>
+                          <tr>
+                              <td><a href="#contacto">Hable con nosotros</a></td>
+                          </tr>
+                          <tr>
+                              <td><a href="../screens/verProducto.html?id=1817639e-d7ba-4ca1-abf6-726481aeebc8">Figura de Yoda</a></td>
+                          </tr>
+                          <tr>
+                              <td><a href="../screens/verProducto.html?id=e2336dd8-f0b9-413a-8481-8fb22b105661">Taza Star Wars</a></td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div> 
+          </div>    
+          <nav class="menu__header-nav">
+              <ul class="menu__header-ul">
+                  <a class="menu__header-href" href="/index.html"><li class="menu__header-ul-li">Home</li></a>
+                  <a class="menu__header-href" href="/screens/allProducts.html"><li class="menu__header-ul-li">Productos</li></a>
+                  <a class="menu__header-href" href="#contacto"><li class="menu__header-ul-li">Contacto</li></a> 
+              </ul>
+          </nav>     
+      </header>
+  </section>
+    <section class="banner">
+      <img class="img__nosotros" src="../Imagenes/banner-otros.jpg" />
+    </section>
+    <section class="galeriaProductos">
+      <div class="galeriaProductos__container">
+        <div class="contenedor">
+          <span class="galeriaProductos__container__span" id="diversos">
+            <h2 class="galeriaProductos__container_titulo">Diversos</h2>
+          </span>
+          <div class="galeriaProductos__mercancia" data-diversos></div>
+          <button id="mostrarDiversos" class="button-79">Mostrar +</button>
+        </div>
+        </div>
+    </section>
+    <section class="footer">
+      <div class="footer__container">
+          <img class="footer__container__logo" src="/Imagenes/LogoDR.png" alt="Logo AluraGeek">
+          <ul class="footer__container__ul">
+              <li class="footer__container__ul-li"><a href="/screens/nosotros.html">Quienes somos</a></li>
+              <li id="mapa" class="footer__container__ul-li"><a href="#">Nuestras tiendas</a></li>
+              <li id="eventos" class="footer__container__ul-li"><a href="#">Dónde más encontrarnos</a></li>
+              <li id="contacto" class="footer__container__ul-li"><a href="#">Quiero vender sus productos</a></li>
+              <li class="footer__container__ul-li"><a href="/screens/politica-privacidad.html">Política de privacidad</a></li>       
+          </ul>
+          <form class="footer__container__form" id="contacto">
+              <h3 class="footer__container__form-titulo">Hable con nosotros</h3>
+              <div class="input-container">
+                  <input type="text" id="nombre" class="footer__container__form-input"  placeholder="Nombre" required pattern="[\s\S]{4,30}" data-tipo="nombre">
+                  <span class="input-message-error">Este campo no es valido</span>
+              </div>
+              <div class="textarea-container">
+                  <textarea class="footer__container__form-textarea" id="mensaje" placeholder="Escribe tu mensaje" cols="30" rows="10" required minlength="10" maxlength="300" data-tipo="textoMensaje"></textarea>
+                  <span class="textarea-message-error">Este campo no es valido</span>
+              </div>
+              <button class="footer__container__form-btn">Enviar mensaje</button>
+          </form>
+      </div>    
+  </section>
+    <section class="rodapie">
+      <div class="rodapie__container">
+        <img
+          src="../Imagenes/LogoDRC.png"
+          class="rodapie__logo"
+          alt="Logo Didacti Rivers"
+        />
+        <p class="rodapie__parrafo">©Copyright Didacti Rivers</p>
+      </div>
+      <button class="rodapie__btn"><span><a class="rodapie__href" href="../index.html">Inicio</a></span></button>
+    </section>
+    <script type="module" src="../js/app.js"></script>
+    <script
+      type="module"
+      src="../controllers/diversos-controller.js"
+    ></script>
+    <script type="module" src="../js/buscador.js"></script>
+    <script type="module" src="../js/alerts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

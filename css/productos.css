@@ -1,0 +1,123 @@
+.productos{
+    background: #E5E5E5;
+    width: 100%;
+    display: flex;
+}
+
+.productos__container{
+    width: 85%;
+    height: 100%;
+    margin-top: 15px;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+}
+
+.productos__container__span{
+    width: fill;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.productos__container__titulo{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    color: #464646;
+}
+
+.productos__container__btn{
+    background: #2A7AE4;
+    width: 163px;
+    height: 51px;
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 16px;
+    border: 1px solid silver;
+}
+
+.productos__container__btn a{
+    color: white;
+    text-decoration: none;
+}
+
+.productos__container__todos{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.productos__container__caja{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.productos__container__caja-img{
+    width: 176px;
+    height: 174px;
+}
+
+.productos__container__caja-iconos{
+    position: absolute;
+    padding: 10px;
+    margin-left: 107px;
+}
+
+.fa-solid{
+    cursor: pointer;
+    color: white;
+    margin: 5px;
+}
+
+
+.productos__container__caja-producto{
+    width: 154px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #464646;
+}
+
+.productos__container__caja-precio{
+    width: 154px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+}
+
+.productos__container__caja-serie{
+    width: 154px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #464646; 
+    margin-bottom: 40px;
+}
+
+.productos__container__todos{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 425px){
+    .productos__container__caja-img{
+        width: 155px;
+    }
+
+    .productos__container__caja-iconos{
+        margin-left: 85px;
+    }
+}
+

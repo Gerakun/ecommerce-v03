@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="Es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <script
+      src="https://kit.fontawesome.com/77d76d86b5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Eccomerce Didacti Rivers</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/menu.css" />
+    <link rel="stylesheet" href="../css/añadirProducto.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/rodapie.css" />
+  </head>
+  <body>
+    <section class="menu">
+      <header class="menu__header">
+        <img
+          class="menu__header-logo"
+          src="../Imagenes/LogoDR.png"
+          alt="Logo AluraGeek"
+        />
+        <p class="menu__header-p">Sección para administradores</p>
+      </header>
+    </section>
+    <section class="añadir">
+      <div class="añadir__container">
+        <form class="añadir__container__formulario" data-form>
+          <h3 class="añadir__container__formulario-titulo">
+            Agregar nuevo producto
+          </h3>
+          <div class="input-container">
+            <label class="añadir__container__formulario-label"
+              >Selecciona una imagen de tu equipo<br
+            /></label>
+            <input
+              data-tipo="url"
+              type="file"
+              id="file"
+              data-img
+              required
+              accept="image/*"
+            />
+            <img
+              id="img__preview"
+              class="img__preview"
+              src=""
+              alt="Imagen previa..."
+            />
+            <span class="input-message-error">Este campo no es valido</span>
+          </div>
+          <div class="input-container">
+            <label class="añadir__container__formulario-label">Seleccione una categoría</label>
+            <select required class="añadir__container__formulario-select"
+            data-categoria>
+                <option value="" disabled selected>Elige una opción</option>
+                <option value="Didacticos">Didacticos</option>
+                <option value="Libros">Libros</option>
+                <option value="Diversos">Diversos</option>
+                <span class="input-message-error">Este campo no es valido</span>
+            </select> 
+          </div>
+          <div class="input-container">
+            <label class="añadir__container__formulario-label"
+              >Nombre del producto</label
+            >
+            <input
+              class="añadir__container__formulario-input"
+              type="text"
+              required
+              data-tipo="producto"
+              data-producto
+              pattern="[\s\S]{4,100}"
+            />
+            <span class="input-message-error">Este campo no es valido</span>
+          </div>
+          <div class="input-container">
+            <label class="añadir__container__formulario-label"
+              >Precio del produtco</label
+            >
+            <input
+              class="añadir__container__formulario-input"
+              type="text"
+              required
+              data-tipo="precio"
+              data-precio
+              pattern="[\s\S]{3,20}"
+            />
+            <span class="input-message-error">Este campo no es valido</span>
+          </div>
+          <div class="input-container">
+            <input
+              class="añadir__container__formulario-input"
+              id="input2"
+              type="text"
+              placeholder="Descripción del producto"
+              required
+              data-tipo="descripcion"
+              data-descripcion
+              pattern="[\s\S]{10,1200}"
+            />
+            <span class="input-message-error">Este campo no es valido</span>
+          </div>
+          <button class="añadir__container__formulario-btn">
+            Agregar producto
+          </button>
+        </form>
+      </div>
+    </section>
+    <section class="rodapie">
+      <div class="rodapie__container">
+        <img src="../Imagenes/LogoDRC.png" class="rodapie__logo" />
+        <p class="rodapie__parrafo">©Copyright Didacti Rivers</p>
+      </div>
+      <button class="rodapie__btn">
+        <span
+          ><a class="rodapie__href" href="/screens/productos.html"
+            >Menú de Admin</a
+          ></span
+        >
+      </button>
+    </section>
+    <script type="module" src="../js/app.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+      integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      type="module"
+      src="../controllers/addProduct-controller.js"
+    ></script>
+  </body>
+</html>

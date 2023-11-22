@@ -1,0 +1,230 @@
+.footer {
+  background: #eaf2fd;
+  width: 100%;
+  height: 368px;
+  display: flex;
+}
+
+.footer__container {
+  width: 100%;
+  height: 240px;
+  margin-top: 64px;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer__container__logo {
+  width: 176px;
+  height: 170px;
+  padding: 0px;
+}
+
+.footer__container__ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 22px;
+}
+
+.footer__container__ul a {
+  text-decoration: none;
+  color: #464646;
+}
+
+.footer__container__ul-li {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.footer__container__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  width: 560px;
+  height: 240px;
+}
+
+.footer__container__form-titulo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #464646;
+}
+
+.footer__container__form-input {
+  width: 550px;
+  height: 56px;
+  background: #ffffff;
+  border-radius: 4px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #a2a2a2;
+  border: 1px solid silver;
+  outline: none;
+}
+.input-container--invalid .footer__container__form-input {
+  border: 1px solid red;
+  background: #f4b9b9;
+}
+
+.input-message-error {
+  display: none;
+}
+
+.input-container--invalid .input-message-error {
+  color: #df2525;
+  display: block;
+  margin-top: 10px;
+  padding-left: 250px;
+}
+
+.footer__container__form-textarea {
+  width: 550px;
+  height: 82px;
+  background: #ffffff;
+  border-radius: 4px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 50px;
+  color: #a2a2a2;
+  border: 1px solid silver;
+  outline: none;
+}
+.textarea-container--invalid .footer__container__form-textarea {
+  border: 1px solid red;
+  background: #f4b9b9;
+}
+
+.textarea-message-error {
+  display: none;
+}
+
+.textarea-container--invalid .textarea-message-error {
+  color: #df2525;
+  display: block;
+  margin-top: 10px;
+  padding-left: 250px;
+}
+
+.footer__container__form-btn {
+  background: #2a7ae4;
+  width: 144px;
+  height: 51px;
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 16px;
+  border: 1px solid silver;
+  color: white;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 920px) {
+  .footer__container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 919px) {
+  .footer__container {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .footer__container__logo {
+    width: 156px;
+    height: 150px;
+    margin-top: 40px;
+  }
+
+  .footer__container__ul {
+    gap: 10px;
+  }
+
+  .footer__container__ul-li {
+    line-height: 20px;
+  }
+
+  .footer__container__form-input {
+    width: 330px;
+  }
+
+  .footer__container__form-textarea {
+    width: 330px;
+  }
+  
+  .input-container--invalid .input-message-error {
+    padding-left: 45px;
+  }
+
+  .textarea-container--invalid .textarea-message-error {
+    padding-left: 0px;
+  }
+ 
+}
+
+@media screen and (max-width: 425px) {
+  .footer {
+    height: 448px;
+  }
+
+  .footer__container__logo {
+    display: none;
+  }
+
+  .footer__container {
+    margin-top: 14px;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer__container__ul {
+    width: 90%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer__container__form {
+    width: 98%;
+    align-items: center;
+  }
+
+  .footer__container__form-input {
+    width: 300px;
+  }
+
+  .footer__container__form-textarea {
+    width: 300px;
+  }
+
+  .input-container--invalid .input-message-error {
+    padding-left: 45px;
+    font-size: 15px;
+  }
+
+  .textarea-container--invalid .textarea-message-error {
+    padding-left: 20px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,65 @@
+.concluida{
+    background: #f4faf5;
+    width: 100%; 
+}
+
+.concluida__container{
+    width: 85%;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.concluida__icon{
+    width: 25%;
+    height: 25%; 
+    margin-top: 10px;
+}
+
+.concluida__parrafo{
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 52px;
+    text-align: center;
+
+}
+
+.concluida__btn{
+    background: #2A7AE4;
+    width: 195px;
+    height: 51px;
+    font: Raleway;
+    font-weight: 400;
+    font-size: 16px;
+    border: 1px solid silver;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+
+}
+
+.concluida__btn a{
+    text-decoration: none;
+    color: white;
+}
+
+/*
+
+@media screen and (max-width: 1020px){
+    .concluida{
+        width: 768px;  
+    }
+}
+
+@media screen and (max-width: 450px){
+    .concluida{
+        width: 360px;     
+    }
+
+    .concluida__parrafo{
+        font-size: 30px;
+    }
+} */
